@@ -1,0 +1,105 @@
+.imagen-contacto {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    img {
+        width: 70%;
+        border: 1rem solid rgb(236, 235, 235);
+    }
+}
+
+.formulario {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #504f4f;
+    border-radius: 1rem;
+    fieldset {
+        border: none;
+    }
+    input {
+        font-weight: 400;
+    }
+    legend {
+        font-weight: 400;
+        font-size: 2.4rem;
+        color: $blanco;
+        padding-top: 2rem;
+    }
+    label {
+        font-weight: 100;
+        display: block;
+        color: $blanco;
+    }
+    select {
+        padding: .5rem;
+        display: block;
+        width: 100%;
+        margin-bottom: 2rem;
+        border-radius: 1rem;
+        border: none;
+        height: 4rem;
+    }
+    input:not([type="submit"]),
+    textarea {
+        padding: .5rem;
+        display: block;
+        width: 98%;
+        background-color: $blanco;
+        margin-bottom: 2rem;
+        border-radius: 1rem;
+        border: none;
+        height: 3rem;
+    }
+    textarea {
+        height: 15rem;
+    }
+    @include mediaDesktop {
+        width: 60rem;
+    }
+}
+
+.error {
+    margin: 2rem auto;
+    background-color: $redweigth;
+    text-align: center;
+    padding: .5rem;
+    color: $blanco;
+    font-weight: 400;
+    @include mediaDesktop {
+        width: 94%;
+    }
+}
+
+.correcto {
+    background-color: rgb(2, 124, 22);
+    text-align: center;
+    padding: .5rem;
+    color: $blanco;
+    font-weight: 400;
+    margin: 2rem auto;
+    @include mediaDesktop {
+        width: 94%;
+    }
+}
+
+.alinear-derecha {
+    display: flex;
+    justify-content: end;
+    .boton-formulario {
+        color: $blanco;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 1.8rem;
+        margin-top: 2rem;
+        padding: 1rem 3rem;
+        margin-bottom: 2rem;
+        margin-right: 1.5rem;
+        border: none;
+        border-radius: .5rem;
+        text-align: center;
+        &:hover {
+            cursor: pointer;
+            background-color: $redweigth;
+        }
+    }
+}

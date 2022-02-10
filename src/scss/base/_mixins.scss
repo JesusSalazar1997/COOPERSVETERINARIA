@@ -1,0 +1,5 @@
+@mixin mediaDesktop {
+    @media (min-width: 76.8rem) {
+        @content;
+    }
+}

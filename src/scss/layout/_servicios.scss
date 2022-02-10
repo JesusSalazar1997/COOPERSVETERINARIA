@@ -1,0 +1,21 @@
+.menu-extra {
+    h3 {
+        margin-left: 1rem;
+    }
+    .contenido-servicios {
+        @include mediaDesktop {
+            display: grid;
+            grid-template-columns: 20% 80%;
+            grid-column-gap: 1rem;
+        }
+        .fondo-rojo {
+            background-color: $rojo;
+            border-radius: 10rem;
+            padding-top: 1.2rem;
+            text-align: center;
+        }
+        .margin-servicios {
+            padding: 0 1rem 0 1rem;
+        }
+    }
+}

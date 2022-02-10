@@ -1,0 +1,62 @@
+.alerta {
+    &.exito {
+        padding: .5rem;
+        text-align: center;
+        color: $blanco;
+        font-weight: $bold;
+        text-transform: uppercase;
+        margin: 1rem 0;
+        background-color: green;
+    }
+}
+
+.boton-rojo-admin {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: $rojo;
+    font-weight: $bold;
+    color: $blanco;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: .5rem;
+    margin-top: 5rem;
+    &:hover {
+        cursor: pointer;
+        background-color: $redweigth;
+        transition: background-color .5s ease;
+    }
+}
+
+.boton-verde-editar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: $verde;
+    font-weight: $bold;
+    color: $blanco;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: .5rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    &:hover {
+        cursor: pointer;
+        background-color: $verdefuerte;
+        transition: background-color .5s ease;
+    }
+}
+
+table.propiedades {
+    margin-top: 4rem;
+    border-spacing: 0;
+    thead {
+        background-color: rgb(74, 78, 74);
+        th {
+            color: $blanco;
+            padding: 2rem;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "epast/coopers-veterinaria",
+    "description": "Creando un proyecto con POO",
+    "type": "project",
+    "authors": [{
+        "name": "JesusSalazar1997",
+        "email": "84056812+JesusSalazar1997@users.noreply.github.com"
+    }],
+    "require": {
+        "phpmailer/phpmailer": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Model\\": "./models",
+            "MVC\\": "./",
+            "Controllers\\": "./controllers"
+        }
+    }
+}
